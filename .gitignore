@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+node_modules/
+dist/
+logs/
+*.tsbuildinfo
+data.zip
+开发规范包_V2.zip
+app.db
+__MACOSX/

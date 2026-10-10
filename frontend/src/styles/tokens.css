@@ -1,0 +1,33 @@
+/**
+ * 设计 token — 与 `.output/ui-design-spec.md` 对齐，供逐页复用。
+ */
+:root {
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-bg-page: #f4f4f5;
+  --color-bg-card: #ffffff;
+  --color-text: #18181b;
+  --color-text-secondary: #71717a;
+  --color-text-muted: #a1a1aa;
+  --color-border: #e4e4e7;
+  --color-danger: #dc2626;
+  --color-danger-bg: #fef2f2;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --shadow-focus: 0 0 0 3px color-mix(in srgb, var(--color-primary) 35%, transparent);
+  --color-surface-elevated: #fafafa;
+  --color-row-selected: #eff6ff;
+  --color-row-selected-border: #bfdbfe;
+  --color-tag-open-bg: #fef3c7;
+  --color-tag-open-text: #92400e;
+  --color-tag-processing-bg: #dbeafe;
+  --color-tag-processing-text: #1d4ed8;
+  --color-tag-closed-bg: #f4f4f5;
+  --color-tag-closed-text: #52525b;
+  --color-danger-border: #fecaca;
+  --font-sans:
+    Inter,
+    'PingFang SC',
+    'Microsoft YaHei',
+    sans-serif;
+}

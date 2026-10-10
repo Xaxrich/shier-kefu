@@ -1,0 +1,29 @@
+# 本地开发默认配置（勿提交生产密钥）。可通过 PYCORE_ 前缀环境变量覆盖 ConfigManager 加载项，见 pycore.core.EnvConfigLoader。
+
+debug = true
+secret_key = "change-me-in-dev"
+database_url = "sqlite+aiosqlite:///./app.db"
+host = "0.0.0.0"
+port = 8000
+cors_origins = [ "http://localhost:5173" ]
+jwt_secret_key = "change-me-jwt-dev"
+jwt_algorithm = "HS256"
+jwt_expire_minutes = 10080
+
+# 知识库存储（相对 backend 工作目录）
+kb_storage_dir = "data/kb"
+kb_max_upload_bytes = 2097152
+
+# OpenAI 兼容 API（密钥留空则智能回答接口返回 503，便于本地仅测工单）
+# 阿里云百炼示例（北京）：llm_base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+# 对话模型示例：qwen-turbo / qwen-plus；向量：text-embedding-v4（见百炼文档）
+# 密钥建议用环境变量 PYCORE_LLM_API_KEY 注入，勿写入仓库
+llm_base_url = "https://api.openai.com/v1"
+llm_api_key = ""
+llm_chat_model = "gpt-4o-mini"
+llm_embedding_model = "text-embedding-3-small"
+qa_similarity_threshold = 0.8
+rrf_k = 60
+vector_top_k = 5
+keyword_top_k = 8
+rerank_top_k = 5
